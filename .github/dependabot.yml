@@ -10,6 +10,8 @@ updates:
     schedule:
       interval: "daily"
     target-branch: "staging"
+    labels:
+      - "only-patch-updates"
     groups:
       dependencies:
         patterns:
