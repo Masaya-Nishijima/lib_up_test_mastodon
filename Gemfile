@@ -4,10 +4,10 @@ source 'https://rubygems.org'
 ruby '>= 3.1.0'
 
 gem 'propshaft'
-gem 'puma', '~> 6.3'
-gem 'rack', '~> 2.2.7'
-gem 'rails', '~> 7.1.1'
-gem 'thor', '~> 1.2'
+gem 'puma', '~> 6.4'
+gem 'rack', '~> 2.2.12'
+gem 'rails', '~> 7.1.5'
+gem 'thor', '~> 1.3'
 
 gem 'dotenv'
 gem 'haml-rails', '~>2.0'
@@ -17,7 +17,7 @@ gem 'pghero'
 gem 'aws-sdk-s3', '~> 1.123', require: false
 gem 'blurhash', '~> 0.1'
 gem 'fog-core', '<= 2.5.0'
-gem 'fog-openstack', '~> 1.0', require: false
+gem 'fog-openstack', '~> 1.1', require: false
 gem 'kt-paperclip', '~> 7.2'
 gem 'md-paperclip-azure', '~> 2.2', require: false
 gem 'ruby-vips', '~> 2.2', require: false
@@ -37,14 +37,14 @@ end
 
 gem 'net-ldap', '~> 0.18'
 
-gem 'omniauth', '~> 2.0'
-gem 'omniauth-cas', '~> 3.0.0.beta.1'
+gem 'omniauth', '~> 2.1'
+gem 'omniauth-cas', '~> 3.0.1'
 gem 'omniauth_openid_connect', '~> 0.6.1'
 gem 'omniauth-rails_csrf_protection', '~> 1.0'
-gem 'omniauth-saml', '~> 2.0'
+gem 'omniauth-saml', '~> 2.1'
 
 gem 'color_diff', '~> 0.1'
-gem 'csv', '~> 3.2'
+gem 'csv', '~> 3.3'
 gem 'discard', '~> 1.2'
 gem 'doorkeeper', '~> 5.6'
 gem 'ed25519', '~> 1.3'
@@ -58,13 +58,13 @@ gem 'httplog', '~> 1.7.0'
 gem 'i18n'
 gem 'idn-ruby', require: 'idn'
 gem 'inline_svg'
-gem 'irb', '~> 1.8'
+gem 'irb', '~> 1.14'
 gem 'kaminari', '~> 1.2'
 gem 'link_header', '~> 0.0'
 gem 'mario-redis-lock', '~> 1.2', require: 'redis_lock'
 gem 'mime-types', '~> 3.5.0', require: 'mime/types/columnar'
-gem 'nokogiri', '~> 1.15'
-gem 'oj', '~> 3.14'
+gem 'nokogiri', '~> 1.16'
+gem 'oj', '~> 3.16'
 gem 'ox', '~> 2.14'
 gem 'parslet'
 gem 'premailer-rails'
@@ -90,27 +90,27 @@ gem 'stoplight', '~> 4.1'
 gem 'strong_migrations'
 gem 'tty-prompt', '~> 0.23', require: false
 gem 'twitter-text', '~> 3.1.0'
-gem 'tzinfo-data', '~> 1.2023'
+gem 'tzinfo-data', '~> 1.2024'
 gem 'webauthn', '~> 3.0'
 gem 'webpacker', '~> 5.4'
 gem 'webpush', github: 'ClearlyClaire/webpush', ref: 'f14a4d52e201128b1b00245d11b6de80d6cfdcd9'
 
 gem 'json-ld'
-gem 'json-ld-preloaded', '~> 3.2'
+gem 'json-ld-preloaded', '~> 3.3'
 gem 'rdf-normalize', '~> 0.5'
 
 gem 'opentelemetry-api', '~> 1.3.0'
 
 group :opentelemetry do
   gem 'opentelemetry-exporter-otlp', '~> 0.28.0', require: false
-  gem 'opentelemetry-instrumentation-active_job', '~> 0.7.1', require: false
-  gem 'opentelemetry-instrumentation-active_model_serializers', '~> 0.20.1', require: false
+  gem 'opentelemetry-instrumentation-active_job', '~> 0.7.8', require: false
+  gem 'opentelemetry-instrumentation-active_model_serializers', '~> 0.20.3', require: false
   gem 'opentelemetry-instrumentation-concurrent_ruby', '~> 0.21.2', require: false
-  gem 'opentelemetry-instrumentation-excon', '~> 0.22.0', require: false
-  gem 'opentelemetry-instrumentation-faraday', '~> 0.24.1', require: false
-  gem 'opentelemetry-instrumentation-http', '~> 0.23.2', require: false
-  gem 'opentelemetry-instrumentation-http_client', '~> 0.22.3', require: false
-  gem 'opentelemetry-instrumentation-net_http', '~> 0.22.4', require: false
+  gem 'opentelemetry-instrumentation-excon', '~> 0.22.5', require: false
+  gem 'opentelemetry-instrumentation-faraday', '~> 0.24.8', require: false
+  gem 'opentelemetry-instrumentation-http', '~> 0.23.5', require: false
+  gem 'opentelemetry-instrumentation-http_client', '~> 0.22.8', require: false
+  gem 'opentelemetry-instrumentation-net_http', '~> 0.22.8', require: false
   gem 'opentelemetry-instrumentation-pg', '~> 0.28.0', require: false
   gem 'opentelemetry-instrumentation-rack', '~> 0.24.1', require: false
   gem 'opentelemetry-instrumentation-rails', '~> 0.31.0', require: false
@@ -210,7 +210,7 @@ group :development, :test do
   gem 'test-prof'
 
   # RSpec runner for rails
-  gem 'rspec-rails', '~> 6.0'
+  gem 'rspec-rails', '~> 6.1'
 end
 
 group :production do
