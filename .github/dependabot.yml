@@ -11,6 +11,8 @@ updates:
       interval: "daily"
     target-branch: "staging"
     labels:
+      - "dependencies"
+      - "ruby"
       - "only-patch-updates"
     groups:
       dependencies:
