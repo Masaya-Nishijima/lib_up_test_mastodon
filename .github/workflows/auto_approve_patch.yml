@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Auto approve PRs with 'only-patch-updates' label
-        if: github.event.pull_request.labels.*.name contains 'only-patch-updates'
+        if: contains(github.event.pull_request.labels.*.name, 'only-patch-updates')
         uses: hmarr/auto-approve-action@v2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
